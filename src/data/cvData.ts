@@ -62,7 +62,7 @@ export const cvSections: { [key: string]: CVSection } = {
     ],
   },
   certifications: {
-    title: "COURSES/CERTIFICATIONS",
+    title: "CERTIFICATIONS",
     icon: Award,
     content: [
       {

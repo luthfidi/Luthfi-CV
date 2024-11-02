@@ -29,8 +29,8 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 py-8 px-4">
-      <div className="max-w-6xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden p-6">
+    <div className="min-h-screen bg-gray-100 py-8 px-4 md:px-16 lg:px-32">
+      <div className="max-w-[720px] mx-auto bg-white shadow-lg rounded-lg overflow-hidden p-6">
         {/* Header */}
         <header className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-2 text-primary">Luthfi Hadi</h1>
