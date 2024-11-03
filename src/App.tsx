@@ -18,23 +18,23 @@ const App: React.FC = () => {
   const contactInfo = [
     {
       icon: Mail,
-      text: "lorem.hadi@gmail.com",
-      link: "mailto:lorem.hadi@gmail.com",
+      text: "luthfi.hadi@gmail.com",
+      link: "mailto:luthfi.hadi@gmail.com",
     },
     {
       icon: Phone,
-      text: "+62 812 9111 1111",
-      link: "tel:+6281291111111",
+      text: "+62 812 9560 3317",
+      link: "tel:+6281295603317",
     },
     {
       icon: Linkedin,
       text: "LinkedIn",
-      link: "https://linkedin.com/in/lorem",
+      link: "https://linkedin.com/in/luthfi-hadi",
     },
     {
       icon: Github,
       text: "GitHub",
-      link: "https://github.com/lorem",
+      link: "https://github.com/luthfidi",
     },
   ];
 
@@ -45,7 +45,7 @@ const App: React.FC = () => {
         <div className="max-w-[720px] mx-auto bg-card shadow-sm rounded-xl overflow-hidden p-6 border border-border">
           {/* Header */}
           <header className="text-center mb-6">
-            <h1 className="text-2xl header-title mb-2">Lorem Ipsum</h1>
+            <h1 className="text-2xl header-title mb-2">Luthfi Hadi</h1>
             <div className="flex justify-center flex-wrap gap-4 mb-3">
               {contactInfo.map((contact, index) => (
                 <a

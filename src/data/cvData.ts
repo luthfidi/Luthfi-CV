@@ -1,4 +1,3 @@
-// cvData.ts
 import {
   Book,
   Briefcase,
@@ -11,7 +10,8 @@ import {
 } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
-// Basic content types
+// Basic content types remain the same as they match the CV structure
+
 export interface BaseContent {
   title?: string;
   period?: string;
@@ -59,7 +59,8 @@ export interface CVSection {
   content: any;
 }
 
-// Type guard functions
+// Type guard functions remain the same as they're still applicable
+
 export const isSkills = (content: any): content is Skills => {
   return (
     content &&
@@ -116,7 +117,9 @@ export const skills: Skills = {
     "HTML/CSS",
     "JavaScript",
     "TypeScript",
+    "React",
     "Tailwind CSS",
+    "Bootstrap",
     "ASP.NET",
     "C#",
     "Laravel",
@@ -144,18 +147,25 @@ export const skills: Skills = {
 
 export const projects = [
   {
-    title: "E-Commerce Dashboard",
-    image: "/api/placeholder/400/300",
+    title: "Luthfi Portfolio Website",
+    image: "./src/assets/images/project-1.png",
     description:
-      "A comprehensive dashboard for managing online store operations, including inventory, orders, and customer data.",
-    techStack: ["React", "TypeScript", "Tailwind CSS", "Node.js", "MongoDB"],
+      "My portfolio website showcasing my projects and skills in software engineering as a front-end developer.",
+    techStack: ["HTML/CSS", "JavaScript"],
   },
   {
-    title: "Learning Management System",
-    image: "/api/placeholder/400/300",
+    title: "Luthfi CV Website",
+    image: "./src/assets/images/project-2.png",
     description:
-      "Platform for online education with features for course management, student progress tracking, and interactive learning.",
-    techStack: ["Vue.js", "Laravel", "MySQL", "Docker", "Redis"],
+      "This is my first React project, featuring responsive design with Tailwind CSS and TypeScript for type safety.",
+    techStack: ["React", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "PSD Project GymMe",
+    image: "./src/assets/images/project-3.png",
+    description:
+      "A supplement purchase website developed as a group project, featuring customer buying actions and admin order management.",
+    techStack: ["ASP.NET", "C#", "Tailwind CSS"],
   },
 ];
 
@@ -166,7 +176,7 @@ export const cvSections: { [key: string]: CVSection } = {
     content: [
       {
         description:
-          "A passionate Computer Science student with a diverse background in digital marketing, SEO, and content creation. Seeking to transition into a software engineering role, particularly in front-end development. Strong foundation in both technical and soft skills, with a track record of successful project delivery and team collaboration.",
+          "A 5th-semester Computer Science student at BINUS University with a background in digital marketing, SEO, and content creation. Experienced in project management and team leadership. Seeking to transition focus to software engineering, specifically as a front-end developer.",
       },
     ],
   },
@@ -175,25 +185,24 @@ export const cvSections: { [key: string]: CVSection } = {
     icon: Book,
     content: [
       {
-        title: "Bachelor of Computer Science",
-        institution: "University of Technology Lorem",
-        period: "2021 – Present",
+        title: "Undergraduate Student in Computer Science",
+        institution: "Bina Nusantara University",
+        period: "2022 – Present",
         details: [
-          "Current GPA: 3.85/4.00",
-          "Active member of Computer Science Student Association",
-          "Specialized in Software Engineering and Web Development",
-          "Led team projects in Database Design and Full-Stack Development",
+          "Learned about user-friendly interface design and enhancing user experience",
+          "Acquired practical skills in Agile methodologies and Scrum for project management",
+          "Studied techniques for optimizing code performance in terms of time and memory usage",
+          "Developed skills in identifying and fixing code issues to improve quality and maintainability",
         ],
       },
       {
-        title: "Science Major",
-        institution: "Senior High School 1 Lorem",
+        title: "High School Diploma – Science",
+        institution: "Ibnu Hajar Boarding School",
         period: "2018 – 2021",
         details: [
-          "Graduated with honors (Top 5 in class)",
-          "Leader of Computer Club",
-          "Won 2nd place in Regional Programming Competition",
-          "Participated in National Science Olympiad",
+          "Obtained eligible quota for SNMPTN",
+          "Head of Entrepreneurship Division at OSMIB 2020",
+          "Staff of Bazaar Division at IMFEST 2019",
         ],
       },
     ],
@@ -203,25 +212,15 @@ export const cvSections: { [key: string]: CVSection } = {
     icon: Briefcase,
     content: [
       {
-        title: "Frontend Developer Intern",
-        company: "PT Digital Teknologi Indonesia",
-        period: "Jun/2023 – Sep/2023",
-        details: [
-          "Developed and maintained responsive web applications using React.js and TypeScript",
-          "Implemented UI components following design system guidelines",
-          "Collaborated with backend team to integrate REST APIs",
-          "Improved website performance by 40% through code optimization",
-        ],
-      },
-      {
-        title: "SEO Specialist",
-        company: "PT Lorem Indonesia",
+        title: "SEO Backlinking Specialist",
+        company: "PT Laskar Digital Indonesia",
         period: "Sep/2021 – Dec/2021",
         details: [
-          "Contributed to ranking 40+ websites/articles on Google's first page",
+          "Contributed to ranking 40+ websites/articles on Google's first page for targeted keywords with SEO team",
           "Published 174 articles with SEO standards",
-          "Listed 150 social bookmarking websites",
-          "Utilized SEO tools like WordPress, SEOquake, Google Analytics",
+          "Curated 150 high-authority social bookmarking websites (minimum DA 30, PA 30)",
+          "Social bookmarked 15 articles across a total of 40 websites each",
+          "Utilized SEO tools (WordPress, SEOquake, Google Analytics, Search Console) to optimize performance",
         ],
       },
     ],
@@ -231,25 +230,55 @@ export const cvSections: { [key: string]: CVSection } = {
     icon: Users,
     content: [
       {
-        title: "Head of Technology Division",
-        organization: "Computer Science Student Association",
-        period: "Jan/2023 - Present",
+        title: "FILE/Filemagz Manager",
+        organization: "Bina Nusantara Computer Club (BNCC)",
+        period: "Jan/2024 – Present",
         details: [
-          "Led a team of 15 members in developing and maintaining organization's website",
-          "Organized 5 successful tech workshops and seminars",
-          "Managed IT infrastructure for campus-wide events",
-          "Improved internal communication system efficiency by 60%",
+          "Lead a team of 6 people and conducted monthly sprints for better communication and ideation",
+          "Increased followers by over 2,600 in one year for the Filetechno Instagram account",
+          "Set a record for the most engaging reel with over 18,000 likes and 280,000 views",
+          "Achieved over 40,000+ views on 9 reels in a span of one year",
+          "Set a record for a microblog with 3,900 likes and 38,000 impressions",
+          "Achieved over 300+ likes on 37 microblog feeds in one year",
+          "Created a TikTok video that reached 13,000 likes and 170,000 views",
+          "Trained 32 activists in content creation, video editing, content writing, and copywriting",
+          "Mentored 13 activists in video editing using Adobe Premiere Pro for major annual video editing projects",
+          "Provided coverage for events such as Indo-Indians Bazaar, Creative Icon Exhibition, Event Collector Moments, BNCC x CTI Group, and BNCC x Apple Developer Academy",
+          "Established partnerships with Coding Studio, Indoindians, DKV Creative Advertising Binus, BNCC Kemanggisan, BNCC Region Alam Sutera, CakeResume, Dunia Coding, ToffeDev: SEOcon 2024, and Technoscape 2024, DevOpsDays Jakarta 2024",
         ],
       },
       {
-        title: "Project Manager",
-        organization: "Lorem Technology Community",
-        period: "Aug/2022 - Dec/2022",
+        title: "Publication Coordinator",
+        organization: "TechnoScape 2024",
+        period: "Feb/2024 – Present",
         details: [
-          "Coordinated 3 major community projects with 50+ participants",
-          "Established project management system using Agile methodology",
-          "Facilitated weekly tech sharing sessions",
-          "Created documentation standards for community projects",
+          "Lead a team of 8 individuals and conducted weekly sprints to enhance communication and ideation",
+          "Determined detailed settings for Instagram ads to achieve maximum results",
+          "Successfully managed and completed 45 publications on the @technoscapebncc Instagram account",
+        ],
+      },
+      {
+        title: "Activist",
+        organization: "Bina Nusantara Computer Club (BNCC)",
+        period: "Nov/2022 – Dec/2023",
+        details: [
+          "PRAP Project Manager (Nov 2022 - Dec 2022): Led a team of 9 in organizing a large-scale event prototype",
+          "Leader Team for Leadership Development Program (Mar 2023 - Apr 2023): Managed an 8-member team, ensuring task completion",
+          "Leader Team for FILE Activist Subdivision (Jun 2023 - Aug 2022): Led a 4-member team for weekly content production",
+          "Publication Vice Coordinator at BNCC CSR 2023 (Jul 2023 - Oct 2023): Supported the main coordinator; edited promotional reels",
+          "Sponsorship committee for BNCC Opening Season (Jul 2023 - Oct 2023): Listed and blasted sponsors, managed booth for 3 days",
+        ],
+      },
+      {
+        title: "Head of Social Media",
+        organization: "MarshaOshi",
+        period: "Dec/2020 – Jan/2023",
+        details: [
+          "Led the social media team of 15 admins across platforms including Twitter/X, Instagram, TikTok, and Showroom Live",
+          "Increased the Twitter/X account followers from 700 to 7,000",
+          "Grew the Instagram account followers from 0 to 1,800",
+          "Grew the TikTok account followers from 0 to 1,600",
+          "Achieved an average of 527.000 tweet impressions per month during the last 5 months of my tenure",
         ],
       },
     ],
@@ -269,20 +298,40 @@ export const cvSections: { [key: string]: CVSection } = {
     icon: Award,
     content: [
       {
-        name: "Frontend Development Path - React & TypeScript (2024)",
-        link: "https://example.com/cert1",
+        name: "Learning Front-End Web Development for Beginners, Dicoding Indonesia (2024)",
+        link: "https://www.dicoding.com/certificates/EYX4JGGQWZDL",
       },
       {
-        name: "AWS Cloud Practitioner Certification (2024)",
-        link: "https://example.com/cert2",
+        name: "Learning the Basics of JavaScript Programming, Dicoding Indonesia (2024)",
+        link: "https://www.dicoding.com/certificates/4EXG7V3EQPRL",
       },
       {
-        name: "3-Day Intermediate SEO Masterclass by DailySEO ID (2024)",
-        link: "https://example.com/cert3",
+        name: "3-Day Intermediate SEO Masterclass, DailySEO ID (2024)",
+        link: "https://drive.google.com/file/d/1JDhFSGjE3l6PiHprBso14gOmuGU3lhSW/view?usp=sharing",
       },
       {
-        name: "Leadership: First Time Manager by Mekari University (2024)",
-        link: "https://example.com/cert4",
+        name: "Leadership: First Time Manager, Mekari University Course (2024)",
+        link: "https://univ.mekari.com/certificates/dvdtugxx8g",
+      },
+      {
+        name: "Introduction to Project Management Using Agile Methodology, BINUS University (2024)",
+        link: "https://drive.google.com/file/d/1luYz2pazmokRWZh-tMefVDzr5HCik42Y/view?usp=sharing",
+      },
+      {
+        name: "Project Management with Scrum, BINUS University (2024)",
+        link: "https://drive.google.com/file/d/1KDLR_hI24nzz_PFoztF-wyMuG5ty4dVg/view?usp=sharing",
+      },
+      {
+        name: "LnT UI/UX Design Class, BNCC Learning and Training (2024)",
+        link: "https://drive.google.com/file/d/11WrC9zwUlEwXxIDbvMpRUYE0eR3J5_2h/view?usp=sharing",
+      },
+      {
+        name: "C-Level ENGLISH FOR ADVANCED ENGLISH, Beelinguapp (2023)",
+        link: "https://drive.google.com/file/d/1a-T3_OgGngVlVHFn4ADkVjXbot8vvFpz/view?usp=sharing",
+      },
+      {
+        name: "LnT Back-End Development Class, BNCC Learning and Training (2023)",
+        link: "https://drive.google.com/file/d/15F95e0GWGOehMkn6tXTF5Uvy2vVQb3Db/view?usp=sharing",
       },
     ],
   },
