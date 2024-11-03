@@ -1,8 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    /* Light Mode */
+    --background: 220 30% 94%; /* Abu-abu lebih gelap dengan hint biru */
+    --foreground: 222 47% 11%;
+
+    --card: 220 25% 95%; /* Card sedikit lebih gelap */
+    --card-foreground: 222 47% 11%;
+
+    --border: 220 13% 88%; /* Border lebih gelap untuk kontras lebih baik */
+
+    --ring: 222.2 84% 4.9%;
+
+    --primary: 221 83% 48%; /* Primary color sedikit lebih gelap */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217 19% 27%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 20% 92%; /* Muted lebih gelap */
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 88%; /* Accent lebih gelap */
+    --accent-foreground: 222.2 47.4% 11.2%;
+  }
+
+  .dark {
+    /* Dark Mode */
+    --background: 222 47% 11%; /* Hampir hitam */
+    --foreground: 210 40% 98%; /* Putih */
+
+    --card: 222 47% 11%; /* Hampir hitam */
+    --card-foreground: 210 40% 98%; /* Putih */
+
+    --border: 217 33% 17%; /* Abu-abu gelap */
+
+    --ring: 212.7 26.8% 83.9%;
+
+    --primary: 217.2 91.2% 59.8%; /* Biru lebih terang */
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217 33% 17%; /* Abu-abu gelap */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%; /* Abu-abu gelap */
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217 33% 17%; /* Abu-abu gelap */
+    --accent-foreground: 210 40% 98%;
+  }
+}
+
 body {
+  @apply bg-background text-foreground;
   font-family: "Inter", sans-serif;
-  line-height: 1.6;
+}
+
+/* Utility classes */
+.text-default {
+  @apply text-foreground;
+}
+
+.text-soft {
+  @apply text-muted-foreground;
+}
+
+.bg-soft {
+  @apply bg-muted;
+}
+
+.link-primary {
+  @apply text-primary hover:text-primary/80 transition-colors;
+}
+
+.card-soft {
+  @apply bg-muted/50 rounded-lg border border-border;
+}
+
+.badge {
+  @apply px-2 py-0.5 text-xs bg-muted text-muted-foreground rounded;
+}
+
+.section-title {
+  @apply font-medium text-foreground;
+}
+
+.header-title {
+  @apply font-bold text-foreground;
+}
+
+/* Optional: Tambahkan shadow yang lebih soft untuk card */
+.card-soft {
+  @apply bg-muted/50 rounded-lg border border-border shadow-sm;
+}
+
+/* Optional: Buat hover state lebih subtle */
+.link-primary {
+  @apply text-primary hover:text-primary/90 transition-colors;
 }

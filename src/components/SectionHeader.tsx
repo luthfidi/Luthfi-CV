@@ -7,9 +7,9 @@ interface SectionHeaderProps {
 }
 
 const SectionHeader: React.FC<SectionHeaderProps> = ({ title, icon: Icon }) => (
-  <div className="flex items-center mb-4 border-b-2 border-primary pb-2">
-    <Icon className="mr-3 text-primary" size={24} />
-    <h2 className="text-2xl font-semibold text-primary">{title}</h2>
+  <div className="flex items-center mb-3 border-b border-primary pb-2">
+    <Icon className="mr-2 text-primary" size={20} />
+    <h2 className="text-lg font-semibold text-primary">{title}</h2>
   </div>
 );
 

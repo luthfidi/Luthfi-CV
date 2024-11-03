@@ -7,23 +7,20 @@ interface SkillSectionProps {
 }
 
 const SkillSection: React.FC<SkillSectionProps> = ({ skills }) => (
-  <div className="grid md:grid-cols-3 gap-4">
+  <div className="grid gap-6">
     {Object.entries(skills).map(([category, items]) => (
-      <div key={category} className="bg-white p-4 rounded-lg shadow-md">
-        <h3 className="font-bold mb-2 capitalize text-secondary">
-          {category
-            .replace(/([A-Z])/g, " $1")
-            .replace(/^./, (str) => str.toUpperCase())}
-        </h3>
-        <ul className="list-disc list-inside text-sm">
+      <div key={category} className="bg-white p-6 rounded-xl shadow-md">
+        <h3 className="font-bold mb-4 text-lg text-primary">{category}:</h3>
+        <div className="flex flex-wrap gap-2">
           {items.map((item, index) => (
-            <li key={index}>
-              {typeof item === "object"
-                ? `${item.name} (${item.level || ""})`
-                : item}
-            </li>
+            <span
+              key={index}
+              className="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700"
+            >
+              {typeof item === "object" ? item.name : item}
+            </span>
           ))}
-        </ul>
+        </div>
       </div>
     ))}
   </div>
