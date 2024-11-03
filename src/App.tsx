@@ -1,4 +1,3 @@
-// App.tsx
 import React from "react";
 import { Mail, Phone, Linkedin, Github, Star } from "lucide-react";
 import { ThemeProvider } from "./components/ThemeProvider";
@@ -18,8 +17,8 @@ const App: React.FC = () => {
   const contactInfo = [
     {
       icon: Mail,
-      text: "luthfi.hadi@gmail.com",
-      link: "mailto:luthfi.hadi@gmail.com",
+      text: "luthfi.hadi@binus.ac.id",
+      link: "mailto:luthfi.hadi@binus.ac.id",
     },
     {
       icon: Phone,
@@ -81,20 +80,32 @@ const App: React.FC = () => {
                 key === "organization") &&
                 section.content.map((item, index) => (
                   <div key={index} className="card-soft p-3 mb-3 last:mb-0">
-                    <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-1 mb-1">
-                      <h3 className="text-sm section-title">{item.title}</h3>
-                      <span className="badge">{item.period}</span>
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex-1 min-w-0 relative">
+                        <h3 className="text-sm section-title break-words">
+                          {item.title}
+                        </h3>
+                        <div className="relative z-10">
+                          {" "}
+                          {/* Tambahkan z-index di sini */}
+                          <h4 className="text-sm link-primary mt-0.5 whitespace-nowrap overflow-visible absolute z-20">
+                            {isEducationContent(item)
+                              ? item.institution
+                              : isWorkContent(item)
+                              ? item.company
+                              : isOrganizationContent(item)
+                              ? item.organization
+                              : ""}
+                          </h4>
+                        </div>  
+                      </div>
+                      <span className="badge whitespace-nowrap flex-shrink-0">
+                        {item.period}
+                      </span>
                     </div>
-                    <h4 className="text-sm link-primary mb-1">
-                      {isEducationContent(item)
-                        ? item.institution
-                        : isWorkContent(item)
-                        ? item.company
-                        : isOrganizationContent(item)
-                        ? item.organization
-                        : ""}
-                    </h4>
-                    <ul className="list-disc list-inside text-xs text-soft space-y-0.5">
+                    <ul className="list-disc list-inside text-xs text-soft space-y-0.5 mt-2 pt-4">
+                      {" "}
+                      {/* Tambahkan pt-4 di sini */}
                       {item.details?.map(
                         (detail: string, detailIndex: number) => (
                           <li key={detailIndex}>{detail}</li>
