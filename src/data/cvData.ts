@@ -148,21 +148,21 @@ export const skills: Skills = {
 export const projects = [
   {
     title: "Luthfi Portfolio Website",
-    image: "./src/assets/images/project-1.png",
+    image: "./project-1.png",
     description:
       "My portfolio website showcasing my projects and skills in software engineering as a front-end developer.",
     techStack: ["HTML/CSS", "JavaScript"],
   },
   {
     title: "Luthfi CV Website",
-    image: "./src/assets/images/project-2.png",
+    image: "./project-2.png",
     description:
       "This is my first React project, featuring responsive design with Tailwind CSS and TypeScript for type safety.",
     techStack: ["React", "TypeScript", "Tailwind CSS"],
   },
   {
     title: "PSD Project GymMe",
-    image: "./src/assets/images/project-3.png",
+    image: "./project-3.png",
     description:
       "A supplement purchase website developed as a group project, featuring customer buying actions and admin order management.",
     techStack: ["ASP.NET", "C#", "Tailwind CSS"],
