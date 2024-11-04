@@ -150,21 +150,21 @@ export const projects = [
     title: "Luthfi Portfolio Website",
     image: "./project-1.png",
     description:
-      "My portfolio website showcasing my projects and skills in software engineering as a front-end developer.",
+      "My portfolio website showcasing my projects and skills in software engineering.",
     techStack: ["HTML/CSS", "JavaScript"],
   },
   {
     title: "Luthfi CV Website",
     image: "./project-2.png",
     description:
-      "This is my first React project, featuring responsive design with Tailwind CSS and TypeScript for type safety.",
+      "My first React project, featuring a responsive CV with type-safe development.",
     techStack: ["React", "TypeScript", "Tailwind CSS"],
   },
   {
     title: "PSD Project GymMe",
     image: "./project-3.png",
     description:
-      "A supplement purchase website developed as a group project, featuring customer buying actions and admin order management.",
+      "A group project for a supplement purchase platform with customer and admin functionalities.",
     techStack: ["ASP.NET", "C#", "Tailwind CSS"],
   },
 ];
@@ -189,10 +189,10 @@ export const cvSections: { [key: string]: CVSection } = {
         institution: "Bina Nusantara University",
         period: "2022 – Present",
         details: [
-          "Learned about user-friendly interface design and enhancing user experience",
-          "Acquired practical skills in Agile methodologies and Scrum for project management",
-          "Studied techniques for optimizing code performance in terms of time and memory usage",
-          "Developed skills in identifying and fixing code issues to improve quality and maintainability",
+          "Achieved an A grade in Agile Software Development, Code Reengineering, Pattern Software Design, and Human and Computer Interaction.",
+          "Gained skills in creating user-friendly software interfaces and enhancing user experience.",
+          "Developed abilities in optimizing code performance and maintaining code quality.",
+          "Acquired practical skills in Agile methodologies and Scrum for project management.",
         ],
       },
       {
@@ -201,8 +201,7 @@ export const cvSections: { [key: string]: CVSection } = {
         period: "2018 – 2021",
         details: [
           "Obtained eligible quota for SNMPTN",
-          "Head of Entrepreneurship Division at OSMIB 2020",
-          "Staff of Bazaar Division at IMFEST 2019",
+          "Head of Entrepreneurship Division at OSMIB 2020"
         ],
       },
     ],
