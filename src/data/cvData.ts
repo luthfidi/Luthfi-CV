@@ -189,10 +189,10 @@ export const cvSections: { [key: string]: CVSection } = {
         institution: "Bina Nusantara University",
         period: "2022 – Present",
         details: [
-          "Achieved an A grade in Agile Software Development, Code Reengineering, Pattern Software Design, and Human and Computer Interaction.",
-          "Gained skills in creating user-friendly software interfaces and enhancing user experience.",
-          "Developed abilities in optimizing code performance and maintaining code quality.",
-          "Acquired practical skills in Agile methodologies and Scrum for project management.",
+          "Achieved an A grade in Agile Software Development, Code Reengineering, Pattern Software Design, and Human and Computer Interaction",
+          "Gained skills in creating user-friendly software interfaces and enhancing user experience",
+          "Developed abilities in optimizing code performance and maintaining code quality",
+          "Acquired practical skills in Agile methodologies and Scrum for project management",
         ],
       },
       {
@@ -261,11 +261,11 @@ export const cvSections: { [key: string]: CVSection } = {
         organization: "Bina Nusantara Computer Club (BNCC)",
         period: "Nov/2022 – Dec/2023",
         details: [
-          "PRAP Project Manager (Nov 2022 - Dec 2022): Led a team of 9 in organizing a large-scale event prototype",
-          "Leader Team for Leadership Development Program (Mar 2023 - Apr 2023): Managed an 8-member team, ensuring task completion",
-          "Leader Team for FILE Activist Subdivision (Jun 2023 - Aug 2022): Led a 4-member team for weekly content production",
-          "Publication Vice Coordinator at BNCC CSR 2023 (Jul 2023 - Oct 2023): Supported the main coordinator; edited promotional reels",
-          "Sponsorship committee for BNCC Opening Season (Jul 2023 - Oct 2023): Listed and blasted sponsors, managed booth for 3 days",
+          "PRAP Project Manager (Nov 2022 - Dec 2022): Led a team of 9 in organizing a large-scale event prototype.",
+          "Leader Team for Leadership Development Program (Mar 2023 - Apr 2023): Managed an 8-member team, ensuring task completion.",
+          "Leader Team for FILE Activist Subdivision (Jun 2023 - Aug 2022): Led a 4-member team for weekly content production.",
+          "Publication Vice Coordinator at BNCC CSR 2023 (Jul 2023 - Oct 2023): Supported the main coordinator; edited promotional reels.",
+          "Sponsorship committee for BNCC Opening Season (Jul 2023 - Oct 2023): Listed and blasted sponsors, managed booth for 3 days.",
         ],
       },
       {
