@@ -39,10 +39,12 @@ const App: React.FC = () => {
   ];
 
   return (
-    <ThemeProvider defaultTheme="dark"> {/* Changed to dark theme by default */}
-      <div className="min-h-screen bg-background py-8 px-4 transition-colors">
+    <ThemeProvider defaultTheme="dark">
+    <div className="relative min-h-screen bg-background py-8 px-4 transition-colors">
+      <div className="absolute top-4 right-4 z-50">
         <ThemeToggle />
-        <div className="max-w-[720px] mx-auto bg-card shadow-sm rounded-xl overflow-hidden p-6 border border-border">
+      </div>
+      <div className="max-w-[720px] mx-auto bg-card shadow-sm rounded-xl overflow-hidden p-6 border border-border">
           {/* Header */}
           <header className="text-center mb-6">
             <h1 className="text-2xl header-title mb-2">Luthfi Hadi</h1>
@@ -65,17 +67,7 @@ const App: React.FC = () => {
             </p>
             
             {/* Added CV Download Button */}
-            <div className="flex justify-center">
-              <a
-                href="Luthfi-Hadi-CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors shadow-sm"
-              >
-                <FileText className="mr-2" size={18} />
-                <span className="font-medium">View CV in PDF</span>
-              </a>
-            </div>
+            <CVDownloadButton />
           </header>
 
           {/* Sections */}

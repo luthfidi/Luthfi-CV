@@ -4,7 +4,7 @@ import { FileText } from 'lucide-react';
 const CVDownloadButton: React.FC = () => {
   const handleDownload = () => {
     // Buka PDF di tab baru
-    window.open('./assets/Luthfi-Hadi-CV.pdf', '_blank');
+    window.open('Luthfi-Hadi-CV.pdf', '_blank');
   };
 
   return (
