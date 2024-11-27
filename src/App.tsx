@@ -1,9 +1,10 @@
 import React from "react";
-import { Mail, Phone, Linkedin, Github, Star } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Star, FileText } from "lucide-react";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { ThemeToggle } from "./components/ThemeToggle";
 import SectionHeader from "./components/SectionHeader";
 import ProjectCard from "./components/ProjectCard";
+import CVDownloadButton from "./components/CVDownloadButton";
 import {
   cvSections,
   projects,
@@ -38,7 +39,7 @@ const App: React.FC = () => {
   ];
 
   return (
-    <ThemeProvider defaultTheme="light">
+    <ThemeProvider defaultTheme="dark"> {/* Changed to dark theme by default */}
       <div className="min-h-screen bg-background py-8 px-4 transition-colors">
         <ThemeToggle />
         <div className="max-w-[720px] mx-auto bg-card shadow-sm rounded-xl overflow-hidden p-6 border border-border">
@@ -59,9 +60,22 @@ const App: React.FC = () => {
                 </a>
               ))}
             </div>
-            <p className="text-sm text-soft">
+            <p className="text-sm text-soft mb-4">
               Software Engineer | Frontend Developer | Computer Science Student
             </p>
+            
+            {/* Added CV Download Button */}
+            <div className="flex justify-center">
+              <a
+                href="Luthfi-Hadi-CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors shadow-sm"
+              >
+                <FileText className="mr-2" size={18} />
+                <span className="font-medium">View CV in PDF</span>
+              </a>
+            </div>
           </header>
 
           {/* Sections */}
