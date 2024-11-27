@@ -152,7 +152,7 @@ export const projects = [
     description:
       "My portfolio website showcasing my projects and skills in software engineering.",
     techStack: ["HTML/CSS", "JavaScript"],
-    link: "https://github.com/luthfidi",
+    link: "https://bit.ly/Luthfi-Web-Portfolio",
   },
   {
     title: "Luthfi CV Website",
@@ -160,7 +160,7 @@ export const projects = [
     description:
       "My first React project, featuring a responsive CV with type-safe development.",
     techStack: ["React", "TypeScript", "Tailwind CSS"],
-    link: "https://github.com/luthfidi",
+    link: "https://luthficv.vercel.app",
   },
   {
     title: "PSD Project GymMe",
@@ -168,7 +168,7 @@ export const projects = [
     description:
       "A group project for a supplement purchase platform with customer and admin functionalities.",
     techStack: ["ASP.NET", "C#", "Tailwind CSS"],
-    link: "https://github.com/luthfidi",
+    link: "https://github.com/luthfidi/PSD-Project-GymMe",
   },
 ];
 
