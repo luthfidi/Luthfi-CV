@@ -3,7 +3,6 @@ import { FileText } from 'lucide-react';
 
 const CVDownloadButton: React.FC = () => {
   const handleDownload = () => {
-    // Buka PDF di tab baru
     window.open('Luthfi-Hadi-CV.pdf', '_blank');
   };
 
@@ -18,7 +17,7 @@ const CVDownloadButton: React.FC = () => {
         focus:ring-2 focus:ring-primary/50"
       >
         <FileText className="w-5 h-5" />
-        <span className="font-medium text-sm">Download Full CV (PDF)</span>
+        <span className="font-medium text-sm">CV (PDF)</span>
       </button>
     </div>
   );

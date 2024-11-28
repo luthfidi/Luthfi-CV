@@ -13,6 +13,8 @@ import {
   isWorkContent,
   isOrganizationContent,
 } from "./data/cvData";
+import PortfolioButton from "./components/PortfolioButton";
+import PortfolioFileButton from "./components/PortfolioFileButton";
 
 const App: React.FC = () => {
   const contactInfo = [
@@ -65,9 +67,12 @@ const App: React.FC = () => {
             <p className="text-sm text-soft mb-4">
               Software Engineer | Frontend Developer | Computer Science Student
             </p>
-            
-            {/* Added CV Download Button */}
+
+            <div className="flex justify-center gap-4">
             <CVDownloadButton />
+            <PortfolioFileButton />
+            <PortfolioButton />
+            </div>
           </header>
 
           {/* Sections */}
