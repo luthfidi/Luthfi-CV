@@ -7,52 +7,52 @@
 @layer base {
   :root {
     /* Light Mode */
-    --background: 220 30% 94%; /* Abu-abu lebih gelap dengan hint biru */
-    --foreground: 222 47% 11%;
+    --background: 220 50% 92%;
+    --foreground: 0 0% 12%;
 
-    --card: 220 25% 95%; /* Card sedikit lebih gelap */
-    --card-foreground: 222 47% 11%;
+    --card: 220 40% 82%;
+    --card-foreground: 0 0% 12%;
 
-    --border: 220 13% 88%; /* Border lebih gelap untuk kontras lebih baik */
+    --border: 220 45% 75%;
 
-    --ring: 222.2 84% 4.9%;
+    --ring: 210 70% 45%;
 
-    --primary: 221 83% 48%; /* Primary color sedikit lebih gelap */
-    --primary-foreground: 210 40% 98%;
+    --primary: 210 70% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 19% 27%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 32%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 20% 92%; /* Muted lebih gelap */
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 45% 75%;
+    --muted-foreground: 0 0% 32%;
 
-    --accent: 210 40% 88%; /* Accent lebih gelap */
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 220 40% 82%;
+    --accent-foreground: 0 0% 12%;
   }
 
   .dark {
     /* Dark Mode */
-    --background: 222 47% 11%; /* Hampir hitam */
-    --foreground: 210 40% 98%; /* Putih */
+    --background: 0 0% 12%;
+    --foreground: 0 0% 100%;
 
-    --card: 222 47% 11%; /* Hampir hitam */
-    --card-foreground: 210 40% 98%; /* Putih */
+    --card: 0 0% 19%;
+    --card-foreground: 0 0% 100%;
 
-    --border: 217 33% 17%; /* Abu-abu gelap */
+    --border: 0 0% 16%;
 
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 24 74% 58%;
 
-    --primary: 217.2 91.2% 59.8%; /* Biru lebih terang */
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 24 74% 58%;
+    --primary-foreground: 0 0% 12%;
 
-    --secondary: 217 33% 17%; /* Abu-abu gelap */
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 62%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217 33% 17%; /* Abu-abu gelap */
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 0% 62%;
 
-    --accent: 217 33% 17%; /* Abu-abu gelap */
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 0% 19%;
+    --accent-foreground: 0 0% 100%;
   }
 }
 

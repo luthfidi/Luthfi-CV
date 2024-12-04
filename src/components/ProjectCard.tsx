@@ -5,7 +5,7 @@ interface ProjectProps {
   image: string;
   description: string;
   techStack: string[];
-  link?: string; // Tambahkan properti link opsional
+  link?: string;
 }
 
 const ProjectCard: React.FC<ProjectProps> = ({
@@ -13,7 +13,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
   image,
   description,
   techStack,
-  link = "#", // Default link jika tidak disediakan
+  link = "#",
 }) => (
   <a 
     href={link} 
