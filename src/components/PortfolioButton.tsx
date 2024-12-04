@@ -7,19 +7,17 @@ const PortfolioButton: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center mb-4">
-      <button 
-        onClick={handleOpenPortfolio}
-        className="flex items-center justify-center gap-2 px-4 py-2 
-        bg-primary text-primary-foreground rounded-lg 
-        hover:bg-primary/90 transition-colors 
-        shadow-md hover:shadow-lg focus:outline-none 
-        focus:ring-2 focus:ring-primary/50"
-      >
-        <ExternalLink className="w-5 h-5" />
-        <span className="font-medium text-sm">Portfolio Website</span>
-      </button>
-    </div>
+    <button 
+      onClick={handleOpenPortfolio}
+      className="flex items-center justify-center gap-2 px-4 py-2 
+      bg-primary text-primary-foreground rounded-lg 
+      hover:bg-primary/90 transition-colors 
+      shadow-md hover:shadow-lg focus:outline-none 
+      focus:ring-2 focus:ring-primary/50 text-xs w-auto"
+    >
+      <ExternalLink className="w-5 h-5" />
+      <span className="font-medium">Portfolio Website</span>
+    </button>
   );
 };
 

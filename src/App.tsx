@@ -42,38 +42,43 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider defaultTheme="dark">
-    <div className="relative min-h-screen bg-background py-8 px-4 transition-colors">
-      <div className="absolute top-4 right-4 z-50">
-        <ThemeToggle />
-      </div>
-      <div className="max-w-[720px] mx-auto bg-card shadow-sm rounded-xl overflow-hidden p-6 border border-border">
+      <div className="relative min-h-screen bg-background py-8 px-4 transition-colors">
+        <div className="absolute top-4 right-4 z-50">
+          <ThemeToggle />
+        </div>
+        <div className="max-w-[720px] mx-auto bg-card shadow-sm rounded-xl overflow-hidden p-6 border border-border">
           {/* Header */}
           <header className="text-center mb-6">
-            <h1 className="text-2xl header-title mb-2">Luthfi Hadi</h1>
-            <div className="flex justify-center flex-wrap gap-4 mb-3">
-              {contactInfo.map((contact, index) => (
-                <a
-                  key={index}
-                  href={contact.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-soft hover:text-foreground transition-colors"
-                >
-                  <contact.icon className="mr-1.5" size={16} />
-                  <span className="text-xs">{contact.text}</span>
-                </a>
-              ))}
-            </div>
-            <p className="text-sm text-soft mb-4">
-              Software Engineer | Frontend Developer | Computer Science Student
-            </p>
+  <h1 className="text-2xl header-title mb-2">Luthfi Hadi</h1>
+  <div className="flex justify-center flex-wrap gap-4 mb-3">
+    {contactInfo.map((contact, index) => (
+      <a
+        key={index}
+        href={contact.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center text-soft hover:text-foreground transition-colors"
+      >
+        <contact.icon className="mr-1.5" size={16} />
+        <span className="text-xs">{contact.text}</span>
+      </a>
+    ))}
+  </div>
+  <p className="text-sm text-soft mb-4">
+    Software Engineer | Frontend Developer | Computer Science Student
+  </p>
 
-            <div className="flex justify-center gap-4">
-            <CVDownloadButton />
-            <PortfolioFileButton />
-            <PortfolioButton />
-            </div>
-          </header>
+  {/* Button group */}
+  <div className="flex flex-wrap justify-center gap-4">
+    <div className="flex gap-4 w-full md:w-auto justify-center">
+      <CVDownloadButton />
+      <PortfolioFileButton />
+    </div>
+    <div className="w-full md:w-auto flex justify-center">
+      <PortfolioButton />
+    </div>
+  </div>
+</header>
 
           {/* Sections */}
           {Object.entries(cvSections).map(([key, section]) => (
@@ -108,7 +113,7 @@ const App: React.FC = () => {
                               ? item.organization
                               : ""}
                           </h4>
-                        </div>  
+                        </div>
                       </div>
                       <span className="badge whitespace-nowrap flex-shrink-0">
                         {item.period}
