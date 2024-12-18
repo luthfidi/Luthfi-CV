@@ -26,7 +26,7 @@ const App: React.FC = () => {
     {
       icon: Phone,
       text: "+62 812 9560 3317",
-      link: "tel:+6281295603317",
+      link: "https://wa.me/6281295603317",
     },
     {
       icon: Linkedin,
