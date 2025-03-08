@@ -179,7 +179,7 @@ export const cvSections: { [key: string]: CVSection } = {
     content: [
       {
         description:
-          "A 5th-semester Computer Science student at BINUS University with a background in digital marketing, SEO, and content creation. Experienced in project management and team leadership. Seeking to transition focus to software engineering, specifically as a front-end developer.",
+          "A 6th-semester Computer Science student at BINUS University with a background in digital marketing, SEO, and content creation. Experienced in project management and team leadership. Seeking to transition focus to software engineering, specifically as a front-end developer.",
       },
     ],
   },
