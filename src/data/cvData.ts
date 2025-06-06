@@ -135,7 +135,7 @@ export const skills: Skills = {
 
 export const projects = [
   {
-    title: "Luthfi Portfolio Website",
+    title: "Portfolio Website",
     image: "./project-1.png",
     description:
       "My portfolio website showcasing my projects & skills with perfect Lighthouse scores: 100 in Performance, Accessibility, Best Practices, and SEO",
