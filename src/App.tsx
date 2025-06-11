@@ -1,5 +1,13 @@
 import React from "react";
-import { Mail, Phone, Linkedin, Github, Star, FileText } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  Linkedin,
+  Github,
+  Star,
+  FileText,
+  Trophy,
+} from "lucide-react";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { ThemeToggle } from "./components/ThemeToggle";
 import SectionHeader from "./components/SectionHeader";
@@ -49,36 +57,36 @@ const App: React.FC = () => {
         <div className="max-w-[720px] mx-auto bg-card shadow-sm rounded-xl overflow-hidden p-6 border border-border">
           {/* Header */}
           <header className="text-center mb-6">
-  <h1 className="text-2xl header-title mb-2">Luthfi Hadi</h1>
-  <div className="flex justify-center flex-wrap gap-4 mb-3">
-    {contactInfo.map((contact, index) => (
-      <a
-        key={index}
-        href={contact.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center text-soft hover:text-foreground transition-colors"
-      >
-        <contact.icon className="mr-1.5" size={16} />
-        <span className="text-xs">{contact.text}</span>
-      </a>
-    ))}
-  </div>
-  <p className="text-sm text-soft mb-4">
-    Software Engineer | Frontend Developer | Computer Science Student
-  </p>
+            <h1 className="text-2xl header-title mb-2">Luthfi Hadi</h1>
+            <div className="flex justify-center flex-wrap gap-4 mb-3">
+              {contactInfo.map((contact, index) => (
+                <a
+                  key={index}
+                  href={contact.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-soft hover:text-foreground transition-colors"
+                >
+                  <contact.icon className="mr-1.5" size={16} />
+                  <span className="text-xs">{contact.text}</span>
+                </a>
+              ))}
+            </div>
+            <p className="text-sm text-soft mb-4">
+              Fullstack Developer | Web3 Builder | Computer Science Student
+            </p>
 
-  {/* Button group */}
-  <div className="flex flex-wrap justify-center gap-4">
-    <div className="flex gap-4 w-full md:w-auto justify-center">
-      <CVDownloadButton />
-      <PortfolioFileButton />
-    </div>
-    <div className="w-full md:w-auto flex justify-center">
-      <PortfolioButton />
-    </div>
-  </div>
-</header>
+            {/* Button group */}
+            <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex gap-4 w-full md:w-auto justify-center">
+                <CVDownloadButton />
+                <PortfolioFileButton />
+              </div>
+              <div className="w-full md:w-auto flex justify-center">
+                <PortfolioButton />
+              </div>
+            </div>
+          </header>
 
           {/* Sections */}
           {Object.entries(cvSections).map(([key, section]) => (
@@ -86,7 +94,7 @@ const App: React.FC = () => {
               <SectionHeader title={section.title} icon={section.icon} />
 
               {key === "about" && (
-                <p className="text-sm text-soft">
+                <p className="text-sm text-soft text-justify">
                   {section.content[0].description}
                 </p>
               )}
@@ -156,6 +164,31 @@ const App: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {projects.map((project, index) => (
                     <ProjectCard key={index} {...project} />
+                  ))}
+                </div>
+              )}
+
+              {key === "awards" && (
+                <div className="space-y-3">
+                  {section.content.map((award, index) => (
+                    <div key={index} className="card-soft p-3">
+                      <div className="flex items-start gap-3">
+                        <Trophy
+                          className="text-primary flex-shrink-0 mt-0.5"
+                          size={16}
+                        />
+                        <div className="flex-1">
+                          <h3 className="text-sm section-title mb-1">
+                            {award.name}
+                          </h3>
+                          {award.description && (
+                            <p className="text-xs text-soft text-justify">
+                              {award.description}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
                   ))}
                 </div>
               )}

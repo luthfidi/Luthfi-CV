@@ -106,22 +106,21 @@ export const skills: Skills = {
     "English (Professional working proficiency)",
   ],
   "Soft Skills": [
-    "Communication",
-    "Leadership",
-    "Collaboration",
+    "Team Leadership",
+    "Project Management", 
     "Problem-Solving",
-    "Code Review",
-    "Adaptability",
+    "Cross-functional Collaboration",
   ],
   "Hard Skills": [
     "Frontend: HTML, CSS, JavaScript, TypeScript, React, Next.js, Chakra UI, Tailwind CSS, Bootstrap",
     "Backend: Golang (Echo, GORM), ASP.NET, C#, Laravel, PHP",
     "Database: MySQL, PostgreSQL",
-    "Other: Motoko, C, Java, Python, WordPress",
+    "Blockchain: Solidity, Motoko, Rust",
+    "Other: C, Java, Python, WordPress",
   ],
   "Tool & Software": [
     "Google Workspace",
-    "Microsoft 365",
+    "Microsoft 365", 
     "Figma",
     "Canva",
     "Adobe Premiere Pro",
@@ -130,45 +129,29 @@ export const skills: Skills = {
     "Visual Studio",
     "Dev C++",
     "Eclipse IDE",
+    "Remix IDE",
   ],
 };
 
 export const projects = [
   {
-    title: "Portfolio Website",
+    title: "Lummy Ticket",
     image: "./project-1.png",
     description:
-      "My portfolio website showcasing my projects & skills with perfect Lighthouse scores: 100 in Performance, Accessibility, Best Practices, and SEO",
-    techStack: ["HTML/CSS", "JavaScript"],
-    link: "https://bit.ly/Luthfi-Web-Portfolio",
+      "NFT-based decentralized ticketing platform built on Lisk blockchain with anti-scalping features.",
+    techStack: ["React", "TypeScript", "Solidity", "Chakra UI", "Wagmi", "Ethers.js", "Xellar Kit", "Foundry"],
+    link: "https://lummy-ticket.vercel.app/",
   },
   {
-    title: "LMS Dummy Frontend",
+    title: "React Form Mastery",
     image: "./project-2.png",
-    description:
-      "A prototype for an LMS, focusing on UI/UX implementation and responsiveness.",
-    techStack: [
-      "React",
-      "TypeScript",
-      "Chakra UI",
-      "React Router",
-      "Zustand",
-      "Tanstack",
-      "Recharts",
-      "FullCalendar",
-    ],
-    link: "https://university-lms-seven.vercel.app/",
-  },
-  {
-    title: "React Form Handling",
-    image: "./project-3.png",
     description:
       "A comprehensive guide to building forms with React Hook Form and Zod.",
     techStack: [
       "React",
       "TypeScript",
       "React Hook Form",
-      "Zod",
+      "Zod", 
       "Chakra UI",
       "React Router",
       "Zustand",
@@ -185,7 +168,7 @@ export const cvSections: { [key: string]: CVSection } = {
     content: [
       {
         description:
-          "A 6th-semester Computer Science student at BINUS University with a strong foundation in front-end development and software engineering. Experienced in building responsive web applications, optimizing website performance, and collaborating in team-based projects. Previously involved in digital marketing and SEO, bringing a unique perspective on user experience and engagement.",
+          "A 6th-semester Computer Science student at BINUS University with expertise in full-stack development and blockchain technology. Experienced in building decentralized applications, responsive web applications, and optimizing system performance. Currently serving as CTO of Lummy Ticket while working as a Full Stack Developer. Previously led digital marketing initiatives, bringing a comprehensive perspective on user experience and product development.",
       },
     ],
   },
@@ -198,9 +181,8 @@ export const cvSections: { [key: string]: CVSection } = {
         institution: "Bina Nusantara University",
         period: "2022 – Present",
         details: [
-          "Achieved an A grade in Agile Development, Pattern Software Design, and Human Computer Interaction.",
+          "Achieved A grade in Agile Development, Pattern Software Design, and Human Computer Interaction.",
           "Developed abilities in optimizing code performance and maintaining code quality.",
-          "Acquired practical skills in Agile methodologies and Scrum for project management.",
         ],
       },
       {
@@ -209,7 +191,7 @@ export const cvSections: { [key: string]: CVSection } = {
         period: "2018 – 2021",
         details: [
           "Obtained eligible quota for SNMPTN.",
-          "Head of Entrepreneurship Division at OSMIB 2020.",
+          "Head of Entrepreneurship Division at OSIS 2020.",
         ],
       },
     ],
@@ -219,15 +201,25 @@ export const cvSections: { [key: string]: CVSection } = {
     icon: Briefcase,
     content: [
       {
+        title: "Chief Technology Officer",
+        company: "Lummy Ticket",
+        period: "Apr/2025 – Present",
+        details: [
+          "Led technical development of NFT-based ticketing platform.",
+          "Architected smart contracts with anti-scalping mechanisms using Solidity and Foundry.",
+          "Participated in government-backed Web3 incubator program.",
+        ],
+      },
+      {
         title: "Full Stack Developer",
         company: "PT Zegen Solusi Mandiri",
         period: "Feb/2025 – Present",
         details: [
-          "Developing a Learning Management System (LMS) using React, Golang, Chakra UI, and modern libraries.",
-          "Designing and implementing ERD to optimize database structure and improve query efficiency.",
-          "Slicing UI designs into responsive and interactive web components.",
-          "Building 10+ mini projects as prototypes to refine LMS core features and improve development efficiency.",
-          "Optimizing website performance by reducing load time and improving accessibility.",
+          "Developing comprehensive Learning Management System (LMS) using React, Golang, and Chakra UI.",
+          "Designed and implemented optimized database ERD, improving query efficiency by 40%.",
+          "Converted UI designs into responsive web components with 100% mobile compatibility.",
+          "Built 10+ prototype mini-projects to validate core LMS features before production implementation.",
+          "Optimized application performance, reducing load times by 35% and enhancing accessibility standards.",
         ],
       },
       {
@@ -304,10 +296,25 @@ export const cvSections: { [key: string]: CVSection } = {
     icon: Code,
     content: [projects],
   },
-  certifications: {
-    title: "CERTIFICATIONS",
+  awards: {
+    title: "HONORS & AWARDS",
     icon: Award,
     content: [
+      {
+        name: "Top 5 Winner & Social Media Challenge Winner, Lisk Builders Challenge: Round One, Lisk & BlockDevId (May 2025)",
+        link: "#",
+        description: "Built \"Lummy Ticket\" - NFT-based decentralized ticketing platform on Lisk blockchain with anti-scalping features. Selected for Lisk Spark Incubator - Indonesia's 1st government-backed Web3 incubator with up to USD 150,000 funding pool.",
+      },
+    ],
+  },
+  certifications: {
+    title: "CERTIFICATIONS",
+    icon: FileText,
+    content: [
+      {
+        name: "ICP Hackathon 12 Participant, CodeFest Indonesia (2025)",
+        link: "https://drive.google.com/file/d/1D0_wWe7LmDWk9OMSr57S9NsIi22DTTKp/view?usp=drive_link",
+      },
       {
         name: "Learning Front-End Web Development for Beginners, Dicoding Indonesia (2024)",
         link: "https://www.dicoding.com/certificates/EYX4JGGQWZDL",
