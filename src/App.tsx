@@ -54,7 +54,7 @@ const App: React.FC = () => {
         <div className="absolute top-4 right-4 z-50">
           <ThemeToggle />
         </div>
-        <div className="max-w-[720px] mx-auto bg-card shadow-sm rounded-xl overflow-hidden p-6 border border-border">
+        <div className="max-w-[720px] mx-auto bg-card shadow-sm rounded-xl overflow-hidden p-4 border border-border">
           {/* Header */}
           <header className="text-center mb-6">
             <h1 className="text-2xl header-title mb-2">Luthfi Hadi</h1>
